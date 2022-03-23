@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* Primary */
+    --color-orange: hsl(25, 97%, 53%);
+
+    /* Netral */
+    --color-white: hsl(0, 0%, 100%);
+    --color-light-grey: hsl(217, 12%, 63%);
+    --color-medium-grey: hsl(216, 12%, 54%);
+    --color-dark-blue: hsl(213, 19%, 18%);
+    --color-very-dark-blue: hsl(216, 12%, 8%);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+
+    background-color: var(--color-very-dark-blue);
+}
+
+p {
+    line-height: 25px;
+}
+
+h1, p {
+    margin-bottom: 1rem;
+}
+
+h1, button {
+    color: var(--color-white);
+}
+
+p, li {
+    color: var(--color-light-grey);
+}
+
+.select {
+    color: var(--color-white);
+    background-color: var(--color-light-grey);
+}
+
+.hidden {
+    display: none;
+}
+
+/* Card
+======================================================================================================================*/
+.card {
+    padding: 2rem;
+    width: 21rem;
+
+    background: linear-gradient(180deg, rgba(37,45,55,1) 0%, rgba(25,28,32,1) 40%);
+    border-radius: 10px;
+}
+
+#star {
+    margin-bottom: 1rem;
+    padding: .8rem;
+
+    background-color: var(--color-dark-blue);
+    border-radius: 100%;
+}
+
+/* Card 2
+======================================================================================================================*/
+.card:nth-child(2) {
+    text-align: center;
+}
+
+.card:nth-child(2) {
+    font-size: 16px;
+}
+
+#amount-selected {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.1rem 1rem;
+
+    color: var(--color-orange);
+
+    background-color: var(--color-dark-blue);
+
+    border-radius: 30px;
+}
+
+/* Card Lists
+======================================================================================================================*/
+ul {
+    margin: 2rem 0 2rem;
+    display: flex;
+    justify-content: space-between;
+
+    list-style: none;
+}
+
+li {
+    padding: 1.2rem;
+    height: 10px;
+    width: 10px;
+
+    background-color: var(--color-dark-blue);
+
+    border-radius: 100%;
+}
+
+li:hover {
+    color: var(--color-white);
+
+    background-color: var(--color-orange);
+
+    cursor: pointer;
+}
+
+/* Button
+======================================================================================================================*/
+button {
+    padding: 1rem 0 1rem;
+    width: 100%;
+
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+    background-color: var(--color-orange);
+
+    border: none;
+    border-radius: 30px;
+}
+
+button:hover {
+    color: var(--color-orange);
+
+    background-color: var(--color-white);
+
+    cursor: pointer;
+}
